@@ -46,6 +46,7 @@ def upload_image():
 		# if len(os.listdir(f'{dir}')) > 2:
 		# 	pass
 		print("\n\nLOADER: ", f"{os.getcwd()}{file_url}")
+		print("\n\nFILE URL: ", file_url)
 		loader = f"{os.getcwd()}{file_url}" # Add correct path to image
 		prev_image = loader
 		snake_name,poisonous,description, country, scientific  = image_recognition(loader) # Run image recognition function in imagedetection.py
